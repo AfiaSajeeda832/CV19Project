@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)=toggleSideBar()>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>APP LOGO</span>
+        <span class="example-spacer"></span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+              
+            <a routerlink="#" mat-icon-button>
+                <mat-icon>help_outline</mat-icon>
+            </a>
+        
+            <a routerlink="#">
+                <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+                </mat-menu>     
+            </a>
+
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
